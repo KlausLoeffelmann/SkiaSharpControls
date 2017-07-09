@@ -2,10 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SkiaSharpControls"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
              x:Class="SkiaSharpControls.MainPage">
 
 	<Label Text="Welcome to Xamarin Forms!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
+
+    <!--<skia:SKCanvasView PaintSurface="OnCanvasViewPaintSurface">
+        <skia:SKCanvasView.GestureRecognizers>
+            <TapGestureRecognizer Tapped="OnCanvasViewTapped"/>
+        </skia:SKCanvasView.GestureRecognizers>
+    </skia:SKCanvasView>-->
+
+    <local:CircleControl/>
 
 </ContentPage>
